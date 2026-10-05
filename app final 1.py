@@ -205,9 +205,9 @@ if st.button("Predict CAD Risk"):
         </div>
         """, unsafe_allow_html=True)
 
-        if probability < 0.40:
+        if probability < 0.60:
             risk_text = "LOW"
-        elif probability < 0.70:
+        elif probability < 0.80:
             risk_text = "MODERATE"
         else:
             risk_text = "HIGH"
